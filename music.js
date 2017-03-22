@@ -11,14 +11,9 @@ function Song(title,artist) {
   this.title=title;
   this.artist=artist;
   this.playCount=0;
-}
-
-Artist.prototype.addSong=function(song) {
-  this.songs.push(song)
+  artist.songs.push(title);
 }
 
 // This is how we should be able to use your constructor functions once they work!
 var vanHalen = new Artist("Van Halen");
 var jump = new Song("Jump!", vanHalen);
-
-vanHalen.addSong(jump);
